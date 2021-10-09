@@ -1,10 +1,14 @@
 # Make Change Project
 
 ## Description
-This is my very first Java project while at Skill Distillery!!! Handy description of what the project does and how to run it
+This is my very first Java project while at Skill Distillery!!! I have created a simple program which simulates receiving change back from a shopkeeper after purchasing an item.
+
+To start, you are asked which item you would like to purchase. This part has no impact on the program, but has some (hopefully) fun flavor text. Next, you are asked for the price of the item you are purchasing, and for how much cash you hand over. The program first does a check to make sure that you handed over enough money. If you hand over too little or the exact amount, you get messages saying so. However, if you hand over extra cash, then the program does a few things. First, it figures out how much money the shopkeeper owes you. Next, it runs a check to see what denominations of cash you should have returned. It then notifies you of what bills and coins, and how many of each, you will receive back. It will only display change that you will receive. For example, if something costs $5.00, and you hand over $20.00, it will display one ten dollar bill and one five dollar bill as being returned to you. Finally, you are asked whether you would like to make another purchase, and the program either starts over or terminates.
 
 ## What I learned
-This project helped me to understand blah blah...
+This project helped me thing logically about how to return change. I actually envisioned a change sorter, where a coin will roll down a track with progressively larger wholes until it finds one that it can fit into. For instance, a quarter will roll past the dime hole, the penny hole, and the nickel hole until it falls into the quarter hole. I basically did something like this, but in reverse. I have the program sort the largest denominations first, to see if subtracting one from what is owed would create a negative number. If it doesn't, then tally that denomination, subtract the value from the total, and try it again. If it does result in a negative, move to the next smallest bill or coin. I also added, at the last minute, a simple check to see if the customer would like to purchase something else. I was actually very nervous to do this, so I created a side program to test the logic out first. After the change is given, the user is prompted whether they would like to make another purchase. I created a switch conditional that either restarts or terminates the program. Using various methods made this much much easier. I even created a method that would be called on to see whether the user would keep going. This kept the main method very clean, to just a few short flavor dialogue intro lines (which I did not want repeated), and do/while loop containing the methods I used.
+
+Overall, I had a lot of fun working through how to create this, and became way more confident with do/while loops, methods, and conditionals. 
 
 ### Technologies Used
-Java, Eclipse, Git, etc...
+Java, Eclipse, and Git.
